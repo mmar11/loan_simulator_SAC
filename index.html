@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora SAC</title>
+    <link rel="stylesheet" href="estilo.css" />
+  </head>
+
+  <body>
+    <hr />
+    <h1>Simulador de financiamento - SAC</h1>
+    <div class="container">
+      <label for="valor">Valor</label>
+      <input type="text" name="valor" id="valor" />
+
+      <label for="entrada">Entrada</label>
+      <input type="text" name="entrada" id="entrada" />
+
+      <label for="taxa">Taxa</label>
+      <input type="text" name="taxa" id="taxa" />
+      <label for="prazo">Prazo</label>
+      <input type="text" name="prazo" id="prazo" />
+    </div>
+    <div class="send">
+      <button type="submit" id="calcular">Simular</button>
+      <button type="submit" id="clear">Limpar Simulação</button>
+      <label for="carencia">Carência</label>
+      <input type="checkbox" name="carencia" id="carencia" />
+      <select name="prazcarencia" id="prazcarencia" hidden>
+        <option value="0">selecione a carencia</option>
+        <option value="3">3</option>
+        <option value="6">6</option>
+      </select>
+    </div>
+    <h3 id="message"></h3>
+    <hr />
+    <table>
+      <thead>
+        <th>Numero</th>
+        <th>Saldo Devedor</th>
+        <th>Amortizacao</th>
+        <th>Juros Mes</th>
+        <th>Prazo Remanescente</th>
+        <th>Valor Parcela</th>
+        <th>Saldo Final</th>
+      </thead>
+
+      <tbody id="tbody"></tbody>
+    </table>
+
+    <!-- <a id="sendemail" href="">Enviar por E-mail</a> -->
+    <script type="module" src="index.js"></script>
+  </body>
+</html>

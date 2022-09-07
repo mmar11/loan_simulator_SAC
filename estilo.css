@@ -1,0 +1,104 @@
+/* normalização */
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #04aa6d;
+  color: aliceblue;
+  font: 12pt tahoma;
+  text-align: center;
+}
+
+hr {
+  height: 5px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.container {
+  padding: 10px;
+  width: 60%;
+  margin: auto;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+h1 {
+  margin: auto;
+  text-align: center;
+}
+
+label {
+  margin: 2px;
+  padding: 2px;
+}
+
+input {
+  margin: 5px;
+}
+
+.send {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  padding: 10px;
+  width: 50%;
+  margin: auto;
+}
+
+button {
+  padding: 2px;
+  background-color: aliceblue;
+  color: #04aa6d;
+  border: aliceblue solid 2px;
+  font: 12pt tahoma;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #04aa6d;
+  color: aliceblue;
+  border: aliceblue solid 2px;
+}
+
+#sendemail {
+  padding: 2px;
+  background-color: aliceblue;
+  color: #04aa6d;
+  border: aliceblue solid 2px;
+  font: 12pt tahoma;
+  cursor: pointer;
+  margin: 20px 20px;
+}
+
+#sendemail:hover {
+  background-color: #04aa6d;
+  color: aliceblue;
+  border: aliceblue solid 2px;
+}
+
+h3 {
+  text-align: center;
+  margin: auto;
+  color: rgb(243, 171, 171);
+}
+
+th,
+td {
+  text-align: center;
+  border: white solid 1px;
+  margin: 3px;
+  padding: 5px;
+}
+
+table {
+  text-align: center;
+  border: white solid 1px;
+  padding: 5px;
+  margin: 20px auto;
+}
